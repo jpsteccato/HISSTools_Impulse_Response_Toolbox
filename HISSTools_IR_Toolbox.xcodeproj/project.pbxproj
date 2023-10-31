@@ -33,6 +33,7 @@
 				B8ECA2F62136A742007B475B /* PBXTargetDependency */,
 				B882BC2F218B167300D6C5B1 /* PBXTargetDependency */,
 				B8CF2E0815A6FE0F00EBDB95 /* PBXTargetDependency */,
+				01E3E04B2AF18D0D009B0C19 /* PBXTargetDependency */,
 				B81AFA48143A1BED0014A77A /* PBXTargetDependency */,
 			);
 			name = "All HIRT Externals";
@@ -52,6 +53,13 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		01E3E03A2AF18BEC009B0C19 /* PartitionedConvolve.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B804E66A26B541B30035EA9C /* PartitionedConvolve.cpp */; };
+		01E3E03B2AF18BEC009B0C19 /* MonoConvolve.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B804E66F26B541B30035EA9C /* MonoConvolve.cpp */; };
+		01E3E03C2AF18BEC009B0C19 /* Convolver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B804E66826B541B30035EA9C /* Convolver.cpp */; };
+		01E3E03D2AF18BEC009B0C19 /* NToMonoConvolve.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B804E66726B541B30035EA9C /* NToMonoConvolve.cpp */; };
+		01E3E03F2AF18BEC009B0C19 /* TimeDomainConvolve.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B804E66626B541B30035EA9C /* TimeDomainConvolve.cpp */; };
+		01E3E0412AF18BEC009B0C19 /* libHIRT.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B8A963B327C27E19001C368F /* libHIRT.a */; };
+		01E3E0492AF18C02009B0C19 /* dk-multiconvolve~.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 012F4A472AF1871200407CAD /* dk-multiconvolve~.cpp */; };
 		B804E67326B541B30035EA9C /* TimeDomainConvolve.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B804E66626B541B30035EA9C /* TimeDomainConvolve.cpp */; };
 		B804E67426B541B30035EA9C /* NToMonoConvolve.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B804E66726B541B30035EA9C /* NToMonoConvolve.cpp */; };
 		B804E67526B541B30035EA9C /* Convolver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B804E66826B541B30035EA9C /* Convolver.cpp */; };
@@ -109,6 +117,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		01E3E0362AF18BEC009B0C19 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 089C1669FE841209C02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B8A963B227C27E19001C368F;
+			remoteInfo = HIRT_Core;
+		};
+		01E3E04A2AF18D0D009B0C19 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 089C1669FE841209C02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 01E3E0342AF18BEC009B0C19;
+			remoteInfo = "dk.multiconvolve~";
+		};
 		B81AFA35143A1BED0014A77A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 089C1669FE841209C02AAC07 /* Project object */;
@@ -406,6 +428,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		012F4A472AF1871200407CAD /* dk-multiconvolve~.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "dk-multiconvolve~.cpp"; path = "../HISSTools_IR_Toolbox_Objects/dk-multiconvolve~.cpp"; sourceTree = "<group>"; };
+		01E3E0472AF18BEC009B0C19 /* dk.multiconvolve~.mxo */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "dk.multiconvolve~.mxo"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B80029761696FF4E00B0030C /* AH_Memory_Swap.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = AH_Memory_Swap.hpp; sourceTree = "<group>"; };
 		B80029981696FF4E00B0030C /* ibuffer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ibuffer.hpp; sourceTree = "<group>"; };
 		B800299A1696FF4E00B0030C /* ibuffer_access.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ibuffer_access.hpp; sourceTree = "<group>"; };
@@ -492,6 +516,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		01E3E0402AF18BEC009B0C19 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01E3E0412AF18BEC009B0C19 /* libHIRT.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B807D7321635830F00E3E3A6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -717,6 +749,7 @@
 				B882BC11218B164300D6C5B1 /* morphfilter~.mxo */,
 				B882BC28218B164500D6C5B1 /* bufresample~.mxo */,
 				B8A963B327C27E19001C368F /* libHIRT.a */,
+				01E3E0472AF18BEC009B0C19 /* dk.multiconvolve~.mxo */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -783,6 +816,7 @@
 				B88738721D103559005D16FF /* irvalue~.cpp */,
 				B859422F218B397400C783CF /* morphfilter~.cpp */,
 				B8CF2E2D15A6FEA600EBDB95 /* multiconvolve~.cpp */,
+				012F4A472AF1871200407CAD /* dk-multiconvolve~.cpp */,
 				B8719731131FD3ED00B1356A /* spectrumdraw~.cpp */,
 			);
 			name = "HIRT Objects";
@@ -830,6 +864,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		01E3E0372AF18BEC009B0C19 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B807D7231635830F00E3E3A6 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -987,6 +1028,27 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		01E3E0342AF18BEC009B0C19 /* dk.multiconvolve~ */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01E3E0432AF18BEC009B0C19 /* Build configuration list for PBXNativeTarget "dk.multiconvolve~" */;
+			buildPhases = (
+				01E3E0372AF18BEC009B0C19 /* Headers */,
+				01E3E0382AF18BEC009B0C19 /* Resources */,
+				01E3E0392AF18BEC009B0C19 /* Sources */,
+				01E3E0402AF18BEC009B0C19 /* Frameworks */,
+				01E3E0422AF18BEC009B0C19 /* Rez */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				01E3E0352AF18BEC009B0C19 /* PBXTargetDependency */,
+			);
+			name = "dk.multiconvolve~";
+			productInstallPath = "$(HOME)/Library/Bundles";
+			productName = MSPExternal;
+			productReference = 01E3E0472AF18BEC009B0C19 /* dk.multiconvolve~.mxo */;
+			productType = "com.apple.product-type.bundle";
+		};
 		B807D7221635830F00E3E3A6 /* irextract~ */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B807D7381635830F00E3E3A6 /* Build configuration list for PBXNativeTarget "irextract~" */;
@@ -1497,6 +1559,7 @@
 				B887385A1D103513005D16FF /* irvalue~ */,
 				B882BBFC218B164300D6C5B1 /* morphfilter~ */,
 				B8CF2DC815A6FDDA00EBDB95 /* multiconvolve~ */,
+				01E3E0342AF18BEC009B0C19 /* dk.multiconvolve~ */,
 				B871973D131FD3F300B1356A /* spectrumdraw~ */,
 				B81AF9E7143A1BBA0014A77A /* All HIRT Externals */,
 				B89C242527C2B9450014781F /* Notarized Package */,
@@ -1505,6 +1568,13 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		01E3E0382AF18BEC009B0C19 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B807D7281635830F00E3E3A6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1655,6 +1725,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXRezBuildPhase section */
+		01E3E0422AF18BEC009B0C19 /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B807D7371635830F00E3E3A6 /* Rez */ = {
 			isa = PBXRezBuildPhase;
 			buildActionMask = 2147483647;
@@ -1826,6 +1903,19 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		01E3E0392AF18BEC009B0C19 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01E3E03A2AF18BEC009B0C19 /* PartitionedConvolve.cpp in Sources */,
+				01E3E03B2AF18BEC009B0C19 /* MonoConvolve.cpp in Sources */,
+				01E3E03C2AF18BEC009B0C19 /* Convolver.cpp in Sources */,
+				01E3E03D2AF18BEC009B0C19 /* NToMonoConvolve.cpp in Sources */,
+				01E3E0492AF18C02009B0C19 /* dk-multiconvolve~.cpp in Sources */,
+				01E3E03F2AF18BEC009B0C19 /* TimeDomainConvolve.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B807D7291635830F00E3E3A6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -2016,6 +2106,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		01E3E0352AF18BEC009B0C19 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B8A963B227C27E19001C368F /* HIRT */;
+			targetProxy = 01E3E0362AF18BEC009B0C19 /* PBXContainerItemProxy */;
+		};
+		01E3E04B2AF18D0D009B0C19 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 01E3E0342AF18BEC009B0C19 /* dk.multiconvolve~ */;
+			targetProxy = 01E3E04A2AF18D0D009B0C19 /* PBXContainerItemProxy */;
+		};
 		B81AFA36143A1BED0014A77A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = B8BE8FA813811E1400FD97AA /* bufconvolve~ */;
@@ -2229,6 +2329,33 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		01E3E0442AF18BEC009B0C19 /* Development */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8F3AC44169467C300DF6BF8 /* Config_HIRT.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = Info.plist;
+				PRODUCT_NAME = $TARGET_NAME;
+			};
+			name = Development;
+		};
+		01E3E0452AF18BEC009B0C19 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8F3AC44169467C300DF6BF8 /* Config_HIRT.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = Info.plist;
+				PRODUCT_NAME = $TARGET_NAME;
+			};
+			name = Deployment;
+		};
+		01E3E0462AF18BEC009B0C19 /* Default */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8F3AC44169467C300DF6BF8 /* Config_HIRT.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = Info.plist;
+				PRODUCT_NAME = $TARGET_NAME;
+			};
+			name = Default;
+		};
 		0FFBC547097463A900D78707 /* Default */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B8F3AC44169467C300DF6BF8 /* Config_HIRT.xcconfig */;
@@ -2976,6 +3103,16 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		01E3E0432AF18BEC009B0C19 /* Build configuration list for PBXNativeTarget "dk.multiconvolve~" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01E3E0442AF18BEC009B0C19 /* Development */,
+				01E3E0452AF18BEC009B0C19 /* Deployment */,
+				01E3E0462AF18BEC009B0C19 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
 		0FFBC544097463A900D78707 /* Build configuration list for PBXProject "HISSTools_IR_Toolbox" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

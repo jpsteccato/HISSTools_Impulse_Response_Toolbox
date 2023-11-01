@@ -2333,7 +2333,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B8F3AC44169467C300DF6BF8 /* Config_HIRT.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Developer ID Application: Joseph Steccato (CX696Z6G76)";
 				INFOPLIST_FILE = Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.joesteccato.HISSTools;
 				PRODUCT_NAME = $TARGET_NAME;
 			};
 			name = Development;
@@ -2342,7 +2344,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B8F3AC44169467C300DF6BF8 /* Config_HIRT.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Developer ID Application: Joseph Steccato (CX696Z6G76)";
 				INFOPLIST_FILE = Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.joesteccato.HISSTools;
 				PRODUCT_NAME = $TARGET_NAME;
 			};
 			name = Deployment;
@@ -2351,7 +2355,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B8F3AC44169467C300DF6BF8 /* Config_HIRT.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Developer ID Application: Joseph Steccato (CX696Z6G76)";
 				INFOPLIST_FILE = Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.joesteccato.HISSTools;
 				PRODUCT_NAME = $TARGET_NAME;
 			};
 			name = Default;
